@@ -5,53 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Portfolio Website</title>
+    <title>Omega Mulafu Portfolio</title>
 
     <!-- Boxicons for social media icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Popup CSS -->
-    <style>
-        .popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .popup-content {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            text-align: center;
-            max-width: 500px;
-            width: 80%;
-        }
-
-        .popup-content button {
-            background-color: #0ef;
-            color: #1f242d;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        .popup-content button:hover {
-            background-color: #0c6;
-        }
-    </style>
 </head>
 
 <body>
@@ -59,7 +19,6 @@
     <!-- Header -->
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
-
         <nav class="navbar">
             <a href="#" class="active">Home</a>
             <a href="#about">About</a>
@@ -80,21 +39,17 @@
                 As a Frontend Developer, I specialize in creating modern, responsive, and visually appealing web interfaces using clean and efficient code.
             </p>
 
-            <!-- Social Media Links Section -->
+            <!-- Social Media Links -->
             <div class="social-media">
-                <!-- Facebook Icon with Popup on Click -->
                 <a href="javascript:void(0);" onclick="showFacebookPopup()">
                     <i class="bx bxl-facebook"></i> 
                 </a>
-                <!-- LinkedIn Icon with Popup on Click -->
                 <a href="javascript:void(0);" onclick="showLinkedInPopup()">
                     <i class="bx bxl-linkedin"></i>
                 </a>
-                <!-- WhatsApp Icon with Popup on Click -->
                 <a href="javascript:void(0);" onclick="showWhatsAppPopup()">
                     <i class="bx bxl-whatsapp"></i>
                 </a>
-                <!-- Other Social Icons -->
                 <a href="https://twitter.com/yourusername" target="_blank">
                     <i class="bx bxl-twitter"></i>
                 </a>
@@ -103,17 +58,16 @@
                 </a>
             </div>
 
-            <!-- Download CV Button -->
             <a href="#" class="btn">Download CV</a>
         </div>
 
-        <!-- Image Section -->
+        <!-- Image -->
         <div class="home-image">
             <img src="images/home.jpg" alt="Home Image">
         </div>
     </section>
 
-    <!-- Popup Section for Facebook -->
+    <!-- Popups -->
     <div id="facebookPopup" class="popup">
         <div class="popup-content">
             <p>Do you want to visit my Facebook profile?</p>
@@ -122,7 +76,6 @@
         </div>
     </div>
 
-    <!-- Popup Section for LinkedIn -->
     <div id="linkedinPopup" class="popup">
         <div class="popup-content">
             <p>Do you want to visit my LinkedIn profile?</p>
@@ -131,7 +84,6 @@
         </div>
     </div>
 
-    <!-- Popup Section for WhatsApp -->
     <div id="whatsappPopup" class="popup">
         <div class="popup-content">
             <p>Do you want to message me on WhatsApp?</p>
@@ -140,52 +92,29 @@
         </div>
     </div>
 
-    <!-- Typed.js Script (for animated text) -->
+    <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var type = new Typed(".multiple-text", {
-            strings: ["Frontend Developer", "Backend We Developer", "Blogger", "UI/UX Design"],
+            strings: ["Frontend Developer", "Backend Web Developer", "Blogger", "UI/UX Designer"],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,
             loop: true
         });
 
-        // Show Facebook Popup
-        function showFacebookPopup() {
-            document.getElementById("facebookPopup").style.display = "flex";
-        }
-
-        // Close Facebook Popup
-        function closeFacebookPopup() {
-            document.getElementById("facebookPopup").style.display = "none";
-        }
-
-        // Show LinkedIn Popup
-        function showLinkedInPopup() {
-            document.getElementById("linkedinPopup").style.display = "flex";
-        }
-
-        // Close LinkedIn Popup
-        function closeLinkedInPopup() {
-            document.getElementById("linkedinPopup").style.display = "none";
-        }
-
-        // Show WhatsApp Popup
-        function showWhatsAppPopup() {
-            document.getElementById("whatsappPopup").style.display = "flex";
-        }
-
-        // Close WhatsApp Popup
-        function closeWhatsAppPopup() {
-            document.getElementById("whatsappPopup").style.display = "none";
-        }
+        function showFacebookPopup() { document.getElementById("facebookPopup").style.display = "flex"; }
+        function closeFacebookPopup() { document.getElementById("facebookPopup").style.display = "none"; }
+        function showLinkedInPopup() { document.getElementById("linkedinPopup").style.display = "flex"; }
+        function closeLinkedInPopup() { document.getElementById("linkedinPopup").style.display = "none"; }
+        function showWhatsAppPopup() { document.getElementById("whatsappPopup").style.display = "flex"; }
+        function closeWhatsAppPopup() { document.getElementById("whatsappPopup").style.display = "none"; }
     </script>
 
     <!-- Custom JS -->
     <script src="script.js"></script>
 
 </body>
-
 </html>
+
 
